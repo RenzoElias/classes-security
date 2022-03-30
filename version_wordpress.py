@@ -1,8 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
+from os import path
 
 def main():
-    url = "https://almacendecaballos.com"
+    url = "https://shopage.es"
     cabecera = {'User-Agent':'Firefox'}
     peticion = requests.get(url=url, headers=cabecera)
     soup = BeautifulSoup(peticion.text,'html5lib')
@@ -12,9 +13,8 @@ def main():
     print(version)
     
 if __name__ == '__main__':
-    try:
-        main()
-        
-    except KeyboardInterrupt:
-        print("Saliendo")
-        exit()
+	try:
+		if path.exists("peticion.txt"):
+			main()
+	except KeyboardInterrupt:
+		exit()

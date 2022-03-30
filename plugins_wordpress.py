@@ -7,7 +7,7 @@ def main():
         w = open("wp_plugins.txt", 'r')
         w = w.read().split('\n')
         lista = []
-        url = "http://almacendecaballos.com"
+        url = "https://shopage.es"
         b = Bar("Espere...", max = len(w))
         
         for plugin in w:
@@ -22,7 +22,8 @@ def main():
         b.finish()
         for plugin in lista:
             print("Plugin encontrado: {}".format(plugin))
-            
+        if lista.length == 0:
+            print("No se encontraron plugins") 
     else:
         print("No se encuentra la lista")
 
