@@ -8,7 +8,7 @@ def responde(url):
 
 lista=[]
 objetivo_url="google.com"
-with open('Subdominios/sub_dominioList.txt') as file:
+with open('doc/sub_dominioList.txt') as file:
     for dicc in file.readlines():
         palabras=dicc.strip()
         #print(palabras)
@@ -25,7 +25,7 @@ with open('Subdominios/sub_dominioList.txt') as file:
      #http://
 
 print(lista)
-with open('Subdominios/subdominios_Encontrados.txt', 'a') as datos_guardado:
+with open('doc/subdominios_Encontrados.txt', 'a') as datos_guardado:
  for subdoLista in lista:
      datos_guardado.write( subdoLista + "\n" )
 
@@ -44,7 +44,7 @@ print(datos_guardado)
 
 # lista=[]
 # objetivo_url="google.com/"
-# with open('Subdominios/sub_dominioList.txt') as file:
+# with open('doc/sub_dominioList.txt') as file:
 #     for dicc in file.readlines():
 #         palabras=dicc.strip()
 #         #print(palabras)
@@ -61,7 +61,7 @@ print(datos_guardado)
 #      #http://
 
 # print(lista)
-# with open('Subdominios/subd_Ocultos/subdominios_Encontrados.txt', 'w') as datos_guardado:
+# with open('doc/subd_Ocultos/subdominios_Encontrados.txt', 'w') as datos_guardado:
 #  for subdoLista in lista:
 #      datos_guardado.write( subdoLista + "\n" )
 
