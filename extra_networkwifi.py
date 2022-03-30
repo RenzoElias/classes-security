@@ -1,7 +1,6 @@
 import os
 import threading
 # Saber los IP dispositivos conectados a la red
-# https://www.youtube.com/watch?v=spGUEdavm1Y&ab_channel=JULIANGUILLERMOZAPATARUGELES
 
 def search(ip_adress):
     comando="ping -c 1 "+ip_adress

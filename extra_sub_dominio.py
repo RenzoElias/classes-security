@@ -1,3 +1,5 @@
+#Este codigo se encarga de encontrar los subdominios de un sitio web
+
 import requests
 
 def responde(url):
@@ -22,7 +24,6 @@ with open('doc/sub_dominioList.txt') as file:
         else:
           pass  #print("Subdominio NO encontrado " + new_url)
 
-     #http://
 
 print(lista)
 with open('doc/subdominios_Encontrados.txt', 'a') as datos_guardado:
@@ -33,7 +34,7 @@ print(datos_guardado)
 
 #####################################################################3
 
-# #Este codigo se encarga de encontrar los direcctorios de un  sitio web
+# #Este codigo se encarga de encontrar los directorios de un sitio web
 # import requests
 
 # def responde(url):

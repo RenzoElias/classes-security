@@ -1,7 +1,8 @@
-import requests
-import argparse
 # Run
 # python scraping.py -t https://shopage.es
+# Ver datos de la pagina
+import requests
+import argparse
 parser = argparse.ArgumentParser(description = "Detector de Web")
 parser.add_argument('-t', '--target', help="objetivo")
 parser = parser.parse_args()

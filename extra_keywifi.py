@@ -1,9 +1,5 @@
 ##########################################################################################
 # Python saber los dispositivos conectados y la clave a internet red
-# https://stackoverflow.com/questions/12468179/unicodedecodeerror-utf8-codec-cant-decode-byte-0x9c
-# https://www.youtube.com/watch?v=DBO1zJ4Yn7M&ab_channel=mringsanjuan
-# https://www.youtube.com/watch?v=uApzI7TnX7E&ab_channel=RogerBiderbost
-
 import subprocess 
 import os
 

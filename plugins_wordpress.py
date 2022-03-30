@@ -1,3 +1,4 @@
+# Encontrar plugins de wordpress
 import requests
 from os import path
 from progress.bar import Bar
