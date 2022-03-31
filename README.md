@@ -1,5 +1,6 @@
 # Instalar Dependencias
-.\venv\Scripts\activate 
+virtualenv venv
+.\venv\Scripts\activate
 pip install -r requirements.txt
 
 # Run
