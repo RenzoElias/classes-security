@@ -11,12 +11,11 @@ def search(ip_adress):
 
 
 for ip in range(1,254):
-    current_ip="192.168.10."+str(ip)
+    current_ip="192.168.1."+str(ip)
     # print("Analizando la ip: ", current_ip)
     # search(current_ip)
-    
+
     run= threading.Thread(target=search, args = (current_ip,))
     run.start()
-    
 
-    
+

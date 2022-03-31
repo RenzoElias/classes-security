@@ -1,7 +1,7 @@
 import phonenumbers
 from phonenumbers import geocoder, carrier
 # Saber de que Localidad es el numero celular
-number = "+5192924356"
+number = "+51929243562"
 ch_nmber = phonenumbers.parse(number, 'CH')
 service_nmber = phonenumbers.parse(number, 'RO')
 

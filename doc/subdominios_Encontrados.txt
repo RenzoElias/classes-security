@@ -9,3 +9,8 @@ mail.google.com
 plus.google.com
 support.google.com
 1.google.com
+account.google.com
+mail.google.com
+plus.google.com
+support.google.com
+1.google.com

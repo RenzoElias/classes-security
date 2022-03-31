@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Mar 23 01:24:36 2022
-
-@author: sandr
-"""
-
 # VERSION WORDPRESS
 
 import requests
