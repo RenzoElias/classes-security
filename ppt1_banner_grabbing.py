@@ -1,3 +1,54 @@
+# Forma de conocer qué infraestructura o sistema se encuentra detrás de una aplicación web o servicio
+import socket
+
+def banner(ip, port):
+    s = socket.socket()
+    s.connect((ip, int(port)))
+    s.settimeout(5)
+    print(s.recv(1024))
+
+def main():
+    try:
+        ip = input("Please enter the IP: ")
+        # 185.213.81.185
+        port = str(input("Please enter the port: "))
+        # 22
+        banner(ip, port)
+    except:
+        print("No se encuentro informacion")
+
+main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # # Banner_grabbing
 # import http.client
 # from os import path
@@ -36,23 +87,3 @@
 
 
 
-
-
-################################################################
-# Modified
-import socket
-
-def banner(ip, port):
-    s = socket.socket()
-    s.connect((ip, int(port)))
-    s.settimeout(5)
-    print(s.recv(1024))
-
-def main():
-    ip = input("Please enter the IP: ")
-    # 192.168.1.1
-    port = str(input("Please enter the port: "))
-    # 22
-    banner(ip, port)
-
-main()

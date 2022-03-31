@@ -1,5 +1,5 @@
 # Run
-# python scraping.py -t https://shopage.es
+# python ppt3_scraping.py -t https://shopage.es
 # Ver datos de la pagina
 import requests
 import argparse
@@ -18,7 +18,7 @@ def main():
             print("No se logro llegar al objetivo")
     else:
         print("No se encuentra objetivo")
-        
+
 if __name__ == '__main__':
     main()
 

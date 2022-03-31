@@ -1,7 +1,7 @@
+# Obtener informacion detallada de una pagina web
+# https://www.ibm.com/docs/es/capm?topic=monitors-dns-monitor
 import dns.resolver
 
-# Obtener informacion de una pagina web
-# https://www.ibm.com/docs/es/capm?topic=monitors-dns-monitor
 
 def main():
 	informacion = ['A','AAAA','NS','SOA','MX','MF','MD','TXT']

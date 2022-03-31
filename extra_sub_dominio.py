@@ -1,5 +1,4 @@
 #Este codigo se encarga de encontrar los subdominios de un sitio web
-
 import requests
 
 def responde(url):
@@ -15,12 +14,12 @@ with open('doc/sub_dominioList.txt') as file:
         palabras=dicc.strip()
         #print(palabras)
         new_url=palabras + "." + objetivo_url
-      
+
         datos = responde("http://"+new_url)
 
         if (datos):
             lista.append(new_url)
-            print("Subdominio encontrado: " + new_url ) 
+            print("Subdominio encontrado: " + new_url )
         else:
           pass  #print("Subdominio NO encontrado " + new_url)
 
@@ -31,6 +30,27 @@ with open('doc/subdominios_Encontrados.txt', 'a') as datos_guardado:
      datos_guardado.write( subdoLista + "\n" )
 
 print(datos_guardado)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #####################################################################3
 
@@ -50,12 +70,12 @@ print(datos_guardado)
 #         palabras=dicc.strip()
 #         #print(palabras)
 #         new_url=objetivo_url + palabras
-      
+
 #         datos = responde("http://"+new_url)
 
 #         if (datos):
 #             lista.append(new_url)
-#             print("Direcctorio encontrado: " + new_url ) 
+#             print("Direcctorio encontrado: " + new_url )
 #         else:
 #           pass  #print("Subdominio NO encontrado " + new_url)
 
