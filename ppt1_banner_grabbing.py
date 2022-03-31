@@ -9,13 +9,13 @@ def banner(ip, port):
 
 def main():
     try:
-        ip = input("Please enter the IP: ")
-        # 185.213.81.185
-        port = str(input("Please enter the port: "))
-        # 22
+        ip = input("IP: ")
+        #  190.187.119.61
+        port = str(input("Puerto: "))
+        # 2022
         banner(ip, port)
     except:
-        print("No se encuentro informacion")
+        print("No se encontro informacion")
 
 main()
 

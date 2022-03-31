@@ -1,6 +1,6 @@
 import dns.resolver
 
-# Obtener informacion de una pagina web
+# Obtener rango de ip de una pagina web
 # https://www.ibm.com/docs/es/capm?topic=monitors-dns-monitor
 
 def main():

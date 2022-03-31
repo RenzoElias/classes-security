@@ -7,7 +7,7 @@ def main():
     url = "https://shopage.es"
     cabecera = {'User-Agent':'Firefox'}
     peticion = requests.get(url=url, headers=cabecera)
-    soup = BeautifulSoup(peticion.text,'html5lib')
+    soup = BeautifulSoup(peticion.txt,'html5lib')
     for v in soup.find_all('meta'):
         if v.get('name') == 'generator':
             version = v.get('content')

@@ -1,5 +1,5 @@
 # Run
-# python ppt3_scraping.py -t https://shopage.es
+# python ppt3_getinfo.py -t https://shopage.es
 # Ver datos de la pagina
 import requests
 import argparse
